@@ -10,10 +10,10 @@
     <table width="700px">
         <tr>
             <td><strong>Простая форма поиска с вариантами:</strong>
+                <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="get" maxlength="10"></form>
 <fieldset align="left">
     <legend>Строка поиска</legend>
-    <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="get" maxlength="10">
-        <input type="text">   
+    <input type="text">   
         <input type="submit" value="Искать"><br>
         <label>
             <input type="radio" name="radio_group" value="value_01" id="checkbox_group1_0" checked>на сайте
@@ -25,10 +25,10 @@
 </fieldset>
 </td>
 <td><strong>Простая форма поиска с вариантами:</strong>
+    <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="get"></form>
         <fieldset align="left">
             <legend>Строка поиска</legend>
-            <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="get">
-                <input type="text">* <input type="submit" value="Искать">
+            <input type="text">* <input type="submit" value="Искать">
                 <label>
                     <input type="radio" name="radio_group" value="value_01" id="checkbox_group1_0">на сайте
                     <input type="radio" name="radio_group" value="value_02" id="checkbox_group2_0" checked>в google<br>
@@ -40,10 +40,9 @@
         </fieldset></td>
 <tr>
     <td><strong>Простая форма поиска с вариантами:</strong>
+        <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="get"></form>
         <fieldset align="left">
             <legend>Авторизуйтесь</legend>
-            <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="get">
-                
                 <input type="text" id="login" name="login">
                 <label for="login">*Логин</label>
                 <input type="password" id="pass" name="password">
@@ -77,11 +76,10 @@
 </tr>
 <tr>
     <td><strong>Отзыв:</strong>
+        <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="post"></form>
     <fieldset>
         <legend>Оставьте Ваш отзыв</legend>
-        <form action="http://fe.it-academy.by/TestForm.php" name="enter" method="post">
-            
-                <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name">
 <label for="name">* Имя</label>
 <input type="email" id="email"  name="email">
 <label for="email">* e-mail</label>
@@ -95,9 +93,9 @@
 </fieldset>
     </td>
     <td><strong>Выпадающий и мульти списки:</strong>
+        <form action="http://fe.it-academy.by/TestForm.php" name="select" method="get"></form>
         <fieldset>
     <legend>Города РБ</legend>
-    <form action="http://fe.it-academy.by/TestForm.php" name="select" method="get">
      <select name="list" id="list" size="1">
          <option value="1">Брест</option>
      </select> 
@@ -119,9 +117,9 @@
 </tr>
 <tr>
     <td><strong>Загрузка файла на сервер:</strong>
+        <form action="http://fe.it-academy.by/TestForm.php" name="upload" enctype="multipart/form-data"></form>
     <fieldset>
 <legend>Upload</legend>
-<form action="http://fe.it-academy.by/TestForm.php" name="upload" enctype="multipart/form-data"></form>
 Файл:<br>
 <input type="file" name="file_field" dir="ltr"><br>
 Срок хранения (года):<br>
