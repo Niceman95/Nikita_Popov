@@ -6,26 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+
         div.MenuLevel1 { width: 100px }
         div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
         div.MenuLevel2 { width: 150px; display: none }
         div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
-        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
-        @media all and (min-width: 250px) 
-        {
-            div.MenuLevel1 { width: 100px}
-        div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
-        div.MenuLevel2 { width: 150px; display: block }
-        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
-        div.MenuLevel1 > div.MenuLevel2 { display: inline; position: absolute; left: 80%; top: 90%; z-index: 1 }    
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 
         }
-        @media all and (min-width: 700px) 
+         @media all and (min-width: 183px) 
         {
             div.MenuLevel1 { width: 100%;  position: relative; }
         div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; cursor: pointer; float:left; }
         div.MenuLevel2 { width: 150px; display: none }
-        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: -40%; top: 90%; z-index: 1; float:left 
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: -40%; top: 90%; z-index: 1;  
           }
         }
     </style>
