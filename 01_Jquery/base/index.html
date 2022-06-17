@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table>
+      <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+      <thead>
+        <tr class="first">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </thead>
+        <tbody>
+        </tr>
+        <tr>
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr class="nth">
+            <td>Петрова Илона Петровна</td>
+            <td>М</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr>
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td><td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr class="nth">
+            <td>Пупин Фёдор Фёдорович</td>
+            <td>М</td><td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+    </tbody>
+   </table>    
+   <div>
+    ДАННЫЕ О СОТРУДНИКАХ
+ </div>
+ <button>Показать все строки</button>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script>
+    $(document).ready(function($){
+         $('tr:nth-child(2n+1):not(:first-child)').css({'backgroundColor':'rgb(215, 213, 213)','borderStyle':'dotted', 'borderWidth':'1px'})
+         $ (".one > th").css({'backgroundColor':'grey', 'color' : 'white'})
+         $('th:not(.one>th)').css('textAlign','left')
+         $('td').css({'borderStyle':'dotted', 'borderWidth':'0.5px', 'text-align': 'center'})
+         $("#tab").css({'borderCollapse': 'collapse', 'borderStyle':'dotted', 'borderWidth':'3px', 'width': '100%','borderColor': 'black'})
+         $("div").css({'width': '100%','height':'auto','textAlign':'center', 'color': 'grey'})
+         $("button").css({'backgroundColor':'blue', 'color':'white', 'borderRadius': '5px', 'height':'30px'})
+         $("button").click(function(){
+            $("tr").slideDown()
+         })
+         $("tr").on('click', function(){
+            $(this).slideUp()
+         })
+    });
+ </script>
+</body>
+</html>
