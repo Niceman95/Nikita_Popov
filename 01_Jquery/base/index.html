@@ -8,7 +8,6 @@
 </head>
 <body>
    <table id="table">
-      <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
       <thead>
         <tr class="first">
             <th>ФИО</th>
@@ -28,7 +27,7 @@
             <td>4567</td>
             <td>3453</td>
         </tr>
-        <tr class="nth">
+        <tr>
             <td>Петрова Илона Петровна</td>
             <td>М</td>
             <td>секретарь</td>
@@ -43,7 +42,7 @@
             <td>743434</td>
             <td>987979</td>
         </tr>
-        <tr class="nth">
+        <tr>
             <td>Пупин Фёдор Фёдорович</td>
             <td>М</td><td>водитель</td>
             <td>01.01.1963</td>
@@ -68,8 +67,8 @@
  <script>
     $(document).ready(function($){
          $('tr:nth-child(2n+1):not(:first-child)').css({'backgroundColor':'rgb(215, 213, 213)','borderStyle':'dotted', 'borderWidth':'1px'})
-         $ (".one > th").css({'backgroundColor':'grey', 'color' : 'white'})
-         $('th:not(.one>th)').css('textAlign','left')
+         $ (".first > th").css({'backgroundColor':'grey', 'color' : 'white'})
+         $('th:not(.one>th)').css('textAlign','center')
          $('td').css({'borderStyle':'dotted', 'borderWidth':'0.5px', 'text-align': 'center'})
          $("#table").css({'borderCollapse': 'collapse', 'borderStyle':'dotted', 'borderWidth':'3px', 'width': '100%','borderColor': 'black'})
          $("div").css({'width': '100%','height':'auto','textAlign':'center', 'color': 'grey'})
